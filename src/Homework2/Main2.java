@@ -12,12 +12,14 @@ public class Main2 {
 			String line;
 			while((line = in.readLine()) != null) {
 				System.out.println(line + "task04");
+
 			}
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
 			System.out.println(e.getMessage());
 			e.printStackTrace();
+
 		}
 
 	}
