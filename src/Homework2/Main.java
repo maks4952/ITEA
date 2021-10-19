@@ -21,18 +21,7 @@ public class Main {
 		
 		Scanner scanner1 = new Scanner(System.in);
 		System.out.println("1-EN 2-DE");
-		if(scanner1.hasNextInt()) {
-			int loc = scanner1.nextInt();
-			switch(loc) {
-			case 2:
-				currentLocale = new Locale("de", "DE");
-				break;
-			case 1:
-				currentLocale = new Locale("en", "EN");
-				break;
-				
-			}
-		}
+		
 
 
 		ResourceBundle bundel = ResourceBundle.getBundle("Localization", currentLocale);
@@ -51,11 +40,11 @@ public class Main {
 					main.show(file);
 					break;
 				case "cd":
-					for (File name : file.listFiles()) {
-						if (name.getName().equals(splitInput[1])) {
-							file = new File(file.getAbsolutePath() + "\\" + splitInput[1]);
-						}
-					}
+//					for (File name : file.listFiles()) {
+//						if (name.getName().equals(splitInput[1])) {
+//							file = new File(file.getAbsolutePath() + "\\" + splitInput[1]);
+//						}
+//					}
 					main.show(file);
 					break;
 				default:
