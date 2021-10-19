@@ -17,6 +17,7 @@ public class Main {
 		File file = new File("C:\\Users\\Zephyrus\\eclipse-workspace\\JavaAdvance");
 		Main main = new Main();
 		Locale currentLocale = null;
+		System.out.println("Hello");
 		
 		Scanner scanner1 = new Scanner(System.in);
 		System.out.println("1-EN 2-DE");
